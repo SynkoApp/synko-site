@@ -1,0 +1,8 @@
+[
+    {
+        "version": "1.0.0",
+        "release_date": "25/03/2022",
+        "bug_fixes": ["a","b","c"],
+        "added_features": ["d","e","f"]
+    }
+]

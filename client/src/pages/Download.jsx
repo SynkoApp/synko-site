@@ -3,7 +3,7 @@ import '../index.css';
 import platform from "platform"
 import { Redirect } from 'react-router-dom'
 
-export default class Download extends React.Component {
+export default class extends React.Component {
     constructor(props){
         super(props)
         this.state = {}
@@ -22,7 +22,7 @@ export default class Download extends React.Component {
                             <p>We are glad to know! Our little spy shibas told us you were using <span className={'font-semibold'}>{platform.os.toString()}</span></p>
                             <p>So you can download Synko for {platform.os.toString().split(' ')[0].toLowerCase()} here :</p>
                         </span>
-                        <a className={'hover:underline bg-blue-500 rounded-full px-6 py-2 font-semibold mx-auto'} download="Synko.exe" href={'https://api.synko.kunah.fr/files/Synko%20Client.exe'}>Download</a>
+                        <a className={'hover:underline bg-blue-500 rounded-full px-6 py-2 font-semibold mx-auto'} download="Synko.exe" href={'https://api.synko.kunah.fr/download'}>Download</a>
                     </article>
                 </section>
             </main>

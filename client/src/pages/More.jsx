@@ -3,7 +3,7 @@ import '../index.css';
 import { Redirect } from 'react-router-dom'
 import LangLogo from '../components/LanguagesLogo';
 
-export default class More extends React.Component {
+export default class extends React.Component {
     constructor(props){
         super(props)
         this.state = {}

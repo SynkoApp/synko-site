@@ -1,8 +1,9 @@
 import React from 'react';
 import '../index.css';
 import { Redirect, Link } from 'react-router-dom'
+import axios from 'axios'
 
-export default class Home extends React.Component {
+export default class extends React.Component {
     constructor(props){
         super(props)
         this.state = {}
@@ -12,6 +13,10 @@ export default class Home extends React.Component {
         let SynkoInterface = (await import(`../img/synko.webp`)).default
         let DevFriendly = (await import(`../img/devfriendly.webp`)).default
         this.setState({ SynkoInterface, DevFriendly })
+        axios({
+            method: "get",
+            url: "http://localhost:5001/patch-notes"
+        })
     }
 
     render (){

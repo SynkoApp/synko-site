@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css';
 
-export default class LangLogo extends React.Component {
+export default class extends React.Component {
     constructor(props){
         super(props)
         this.state = {}

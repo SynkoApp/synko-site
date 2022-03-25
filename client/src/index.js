@@ -9,6 +9,8 @@ import Topbar from "./components/Topbar"
 import Home from "./pages/Home"
 import More from "./pages/More"
 import Download from './pages/Download'
+import PatchNotes from './pages/PatchNotes'
+
 
 ReactDOM.render(
   <>
@@ -17,6 +19,7 @@ ReactDOM.render(
       <Route exact path="/" component={Home}/>
       <Route path="/download" component={Download}/>
       <Route path="/more" component={More}/>
+      <Route path="/patchnotes" component={PatchNotes}/>
     </Router>
   </>,
   document.getElementById('main')
