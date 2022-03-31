@@ -7,7 +7,6 @@
 html, body, #synko-app, .switch-wrapper, .switch-wrapper>div {
   height : 100%;
   background-color: #374151;
-  overflow: hidden;
 }
 
 ::-webkit-scrollbar {

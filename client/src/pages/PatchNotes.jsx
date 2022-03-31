@@ -15,7 +15,7 @@ export default class extends React.Component {
             method: "get",
             url: "http://localhost:5001/patch-notes"
         }).then(res => {
-            this.setState({notes: res.data})
+            this.setState({notes: res.data.reverse()})
         })
     }
 
@@ -25,8 +25,8 @@ export default class extends React.Component {
         }
         if(!this.state.notes) return <></>
         return (
-            <main className={'h-full pt-24 flex flex-col bg-gray-700 overflow-auto'}>
-                <section className={"w-11/12 sm:w-4/5 2xl:w-2/3 mx-auto h-full"}>
+            <main className={'pt-24 flex flex-col bg-gray-700'}>
+                <section className={"w-11/12 sm:w-4/5 2xl:w-2/3 mx-auto"}>
                     {this.state.notes.map(e => <PatchNote {...e} />)}
                 </section>
             </main>
